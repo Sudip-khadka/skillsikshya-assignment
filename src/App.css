@@ -1,8 +1,17 @@
-.text,.delete{
+
+.delete{
   color:red;
   display:flex;
   gap:5px;
   align-items: center;
+}
+.text{
+  padding:10px;
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 .cancel{
   background-color: rgb(159, 61, 61);

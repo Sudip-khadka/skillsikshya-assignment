@@ -1,0 +1,6 @@
+.wrapper{
+    width:80%;
+    display:flex;
+    flex-wrap:wrap;
+        box-shadow: 0 0 10px rgba(253, 244, 244, 0.903);
+}

@@ -1,12 +1,14 @@
 
 import './App.css'
 import Button from './component/button'
+import Wrapper from './component/wrapper/Wrapper.jsx'
 
 
 
 function App() {
   return (
     <>
+    <Wrapper >
       <div className='text'>
         
     <Button type="delete" className="delete"/> 
@@ -21,6 +23,7 @@ function App() {
     <Button type="search" className="search"/> 
     
     </div>
+    </Wrapper>
     </>
   )
 }
