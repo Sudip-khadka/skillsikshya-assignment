@@ -1,0 +1,49 @@
+.text,.delete{
+  color:red;
+  display:flex;
+  gap:5px;
+  align-items: center;
+}
+.cancel{
+  background-color: rgb(159, 61, 61);
+}
+
+.submit{
+  color:green;
+}
+.icon{
+  color:black;
+  background-color: aliceblue;
+}
+.text{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  gap:30px;
+  margin: auto;
+}
+.search{
+  color:blue;
+  display:flex;
+  gap:5px;
+  align-items:center;
+  
+}
+.play{
+  color:orange;
+  display:flex;
+  align-items: center;
+  gap:5px;
+}
+.download, .upload, .setting, .home{
+  display:flex;
+  gap:5px;
+  align-items: center;
+}
+
+.upload{
+  color:burlywood;
+}
+.home{
+  color:aqua
+}
