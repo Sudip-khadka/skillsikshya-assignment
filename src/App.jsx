@@ -1,31 +1,47 @@
+import React from 'react';
+import { RouterProvider, createBrowserRouter, Outlet } from 'react-router-dom';
+import './App.css';
+import Navbar from './component/Navbar';
+import Button from './component/button';
+import Login from './component/Login';
 
-import './App.css'
-import Button from './component/button'
-import Wrapper from './component/wrapper/Wrapper.jsx'
+const Layout = () => (
+  <>
+    <Navbar />
+    <Outlet />
+  </>
+);
 
-
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      {
+        path: "/",
+        element: (
+          <div className='text'>
+            <Button type="delete" className="delete" />
+            <Button type="play" className="play" />
+            <Button type="setting" className="setting" />
+            <Button type="home" className="home" />
+            <Button type="upload" className="upload" />
+            <Button type="icon" className="icon" />
+            <Button type="download" className="download" />
+            <Button type="search" className="search" />
+          </div>
+        )
+      },
+      {
+        path: "login",
+        element: <Login />
+      }
+    ]
+  }
+]);
 
 function App() {
-  return (
-    <>
-    <Wrapper >
-      <div className='text'>
-        
-    <Button type="delete" className="delete"/> 
-    <Button type="play" className="play"/> 
-    <Button type="setting" className="setting"/> 
-    <Button type="home" className="home"/> 
-    <Button type="upload" className="upload"/> 
-    <Button type="cancel" className="cancel"/> 
-    <Button type="submit" className="submit"/> 
-    <Button type="icon" className="icon"/> 
-    <Button type="download" className="download"/> 
-    <Button type="search" className="search"/> 
-    
-    </div>
-    </Wrapper>
-    </>
-  )
+  return <RouterProvider router={router} />;
 }
 
-export default App
+export default App;

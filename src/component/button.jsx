@@ -23,6 +23,8 @@ const Button= function Button({type, className}) {
             return <button className={className}>Search<Icon type="search"/></button>;
         case 'download':
             return <button className={className}><Icon type="download"/>Download</button>;
+        case 'profile':
+            return <button className={className}><Icon type="profile"/>Profile/Login</button>;
     }
   return (
     
