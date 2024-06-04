@@ -12,6 +12,10 @@
 .links li{
   list-style-type: none;
 }
+.links a{
+  color:white !important;
+  font-size: 1.3rem;;
+}
 .profile{
   display:flex;
   align-items: center;

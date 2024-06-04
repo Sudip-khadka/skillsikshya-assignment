@@ -13,7 +13,6 @@ const Navbar = () => {
         <li><Link to="/about">About</Link></li>
         <li><Link to="/community">Community</Link></li>
         <li><Link to="/discuss">Discuss</Link></li>
-        <li><Link to="/contests">Contests</Link></li>
       </ul>
       <div className="profile">
         <Link to='/login'><Button type='profile' className='profile' /></Link>

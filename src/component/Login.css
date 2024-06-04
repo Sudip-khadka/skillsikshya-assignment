@@ -30,7 +30,8 @@
     padding: 8px;
     box-sizing: border-box;
     border: 1px solid #ccc;
-    background-color: grey;
+    background-color: white;
+    color:#555555;
     border-radius: 4px;
   }
   
