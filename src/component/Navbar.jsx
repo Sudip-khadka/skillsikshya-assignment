@@ -9,9 +9,9 @@ const Navbar = () => {
         <h1>Assignments</h1>
       </div>
       <ul className="links">
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/about">About</Link></li>
-        <li><Link to="/community">Community</Link></li>
+        <li><Link to="/timer">Timer</Link></li>
+        <li><Link to="/buttons">Buttons</Link></li>
+        <li><Link to="/cards">Cards</Link></li>
         <li><Link to="/discuss">Discuss</Link></li>
       </ul>
       <div className="profile">

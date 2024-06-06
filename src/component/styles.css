@@ -1,0 +1,15 @@
+.timer{
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.countdisplay{
+    display:flex;
+    gap:50px;
+}
+.count{
+    font-size: 40px;
+}
