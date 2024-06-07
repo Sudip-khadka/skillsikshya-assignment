@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import './styles.css'
+import ImageChange from './ImageChange';
 
 function Timer() {
     const [count,setCount] = useState(0);
@@ -35,6 +36,8 @@ function Timer() {
        
         {(count>5) && <h1>You Have Gone {count} steps forward</h1>}
         {(count<-5) && <h1>You Have Gone {count} steps forward</h1>}
+        
+        <ImageChange/>
     </div>
   )
 }

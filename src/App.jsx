@@ -10,6 +10,7 @@ import CodingContests from './component/CodingContests';
 const Layout = () => (
   <>
     <Navbar />
+    
     <Outlet />
   </>
 );
@@ -17,7 +18,10 @@ const Layout = () => (
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />,
+    element: <>
+    <Layout />
+    
+    </>,
     children: [
       {
         path: "/buttons",
@@ -45,7 +49,9 @@ const router = createBrowserRouter([
       {
         path: "/timer",
         element: (
+          <>
         <Timer />
+        </>
       )
       },
       {
